@@ -1,0 +1,202 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #0A043C;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+}
+
+.logo-img {
+    width: 43px;
+    height: 43px;
+    margin-left: 10px;
+}
+
+.logo-title {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: skyblue;
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background: #BBE1FA;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    display: inline-block;
+}
+
+li a:hover {
+    color: skyblue;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.img-rafif {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url("asset/foto/background 2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0A043C;
+    color: white;
+    padding: 40px;
+}
+
+.MT-10 {
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-item {
+    text-align: center;
+    width: 25%;
+    min-height: 200px;
+    max-height: 300px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 24px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,1);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 4px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0A043C;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .intro{
+        margin-top: 20px;
+    }
+    .img-rafif {
+        padding: 0;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #0A043C;
+        z-index: 9;
+    }
+
+    footer {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB PERTAMA</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+            <img src="asset/foto/rswhite2.png" alt="logo" class="logo-img"/>
+            <h1 class="logo-title">RafifStudios</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#jasa">Service</a></li>
+                    <li><a href="mailto:rafif.purnomo@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn-cta" onclick="redirinstagram()" >Follow Me</button>
+        </header>
+        <div class="container">
+            <div class="intro">
+                <p  class="title">Hello, Rafif Purnomo here</p>
+                <p class="description">Student and freelance programmer from Indonesia</p>
+                <img src="asset/foto/rafif.jpg" alt="rafif foto 1" class="img-rafif"/>
+            </div>            
+        </div>
+        <div class="parallax">
+            <div class="tentang">
+                <p  class="title">Freelance Programmer</p>
+                <p class="description">for more information please contact me</p>
+                <div class="MT-10">
+                    <button class="btn-cta" onclick="redirwhatsap()">Contact me</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" id="jasa">
+                    <div class="card-item">
+                        <img src="asset/icon/24 servis.png" alt="icon 1" class="icon"/>
+                        <p  class="card-title">24 hour service</p>
+                        <p class="card-description">always ready to help you</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="asset/icon/coin.png" alt="icon 2" class="icon"/>
+                        <p  class="card-title">cheapest service</p>
+                        <p class="card-description">give friendly price</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="asset/icon/rating2.png" alt="icon 3" class="icon"/>
+                        <p  class="card-title">5 star service</p>
+                        <p class="card-description">Your satisfaction is our responsibility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p  class="title">&copy; RafifPurnomo 2022</p>
+        </footer>
+
+        <script>
+            function redirinstagram () {
+                window.location.href = "https://instagram.com/mrffap"
+            }
+
+            function redirwhatsap () {
+                window.location.href = "https://wa.me/+62817281632325"
+            }
+        </script>
+    </body>
+</html>
